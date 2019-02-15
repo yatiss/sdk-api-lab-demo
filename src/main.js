@@ -1,10 +1,8 @@
-import * as md5
-    from 'blueimp-md5';
 import {PID_TYPE} from "./config";
 import {
     SECRET_DATA,
     getServerData
-} from './server'; // src/server.js 此文件由nobook私下提供
+} from './server';
 
 /**
  * 此页面为备课模式入口页demo
@@ -40,7 +38,6 @@ class main {
             this.editHost = 'http://localhost:3033';
         }
         this.docHost = this.DEBUG ? 'http://res-api.nobook.cc' : 'https://res-api.nobook.com'; // 正式接口地址的host
-        // this.docHost = this.DEBUG ? 'http://school.nobook.tech' : 'https://res-api.nobook.com'; // 接口地址的host
         this.iconHost = this.DEBUG ? 'http://192.168.1.6:3080' : 'https://wuli.nobook.com'; // 缩略图域名
 
         //  接口地址
